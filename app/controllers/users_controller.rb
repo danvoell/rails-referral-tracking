@@ -6,6 +6,11 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+def create
+  @user.referral_code = session[:referral]
+@user.save
+end
+
   def show
     @user = User.find(params[:id])
   end

@@ -6,6 +6,8 @@
   <%= f.input :email, :required => true %>
   <%= f.input :password, :required => true %>
   <%= f.input :password_confirmation, :required => true %>
+   <%=f.input :referral_code, :as => :hidden, :input_html => { :value => session[:referral] } %>
   <%= f.button :submit, 'Sign up', :class => 'btn-primary' %>
+
 <% end %>
 <%= render "devise/shared/links" %>

@@ -1,8 +1,12 @@
 <%= link_to "Voter3", root_path, :class => 'brand' %>
 <ul class="nav">
   <% if user_signed_in? %>
+    
     <li>
     <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
+    </li>
+      <li>
+    <a href="http://localhost:3000?referral=<%= current_user.id %>">http://localhost:3000?referral=<%= current_user.id %></a>
     </li>
   <% else %>
     <li>
