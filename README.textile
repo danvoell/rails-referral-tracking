@@ -1,4 +1,17 @@
-h1. Voter3
+This is a very simple app for referral and/or affiliate tracking in rails. I wanted to create a dropbox style referral options
+
+The basic idea is that the devise user id is the referral code. When a user logs in, their referral code is in the header. When a new user signs up via that referral link, the referral id is stored. 
+
+This app was built on top of the RailsApp with Devise, CanCan and Bootstrap pre-intalled.
+
+I did a short blog write up as to how it was created - 
+
+http://danvoell.com/dev/2013/06/simple-affiliate-and-referral-tracking-with-devise-in-rails-with-a-hint-of-cookies-and-session-variables/
+
+I am a hack developer at best if you have ideas for improvements, by all means go for it, or let me know what I should do. 
+
+Thanks!
+Dan
 
 This application was generated with the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem provided by the "RailsApps Project":http://railsapps.github.io/.
 
