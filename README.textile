@@ -1,4 +1,4 @@
-This is a very simple app for referral and/or affiliate tracking in rails. I wanted to create a dropbox style referral options
+This is a very simple app for referral and/or affiliate tracking in rails. I wanted to create a dropbox style referral option to an application.
 
 The basic idea is that the devise user id is the referral code. When a user logs in, their referral code is in the header. When a new user signs up via that referral link, the referral id is stored. 
 
