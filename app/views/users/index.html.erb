@@ -16,7 +16,6 @@
     <tr>
       <td><%= link_to user.name, user %></td>
       <td><%= user.email %></td>
-      <td><%= user.referral %></td>
       <td><%= user.created_at.to_date %></td>
       <td><%= user.roles.first.name.titleize unless user.roles.first.nil? %></td>
       <td>

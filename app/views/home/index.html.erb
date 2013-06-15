@@ -1,5 +1,4 @@
 <h3>Home</h3>
 <% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-  <td><%= user.referral_code %></td>
+  <p>User:<%=link_to user.name, user %> || User's ID: <%= user.id %> || Referred by User #: <%= user.referral_code %></p>
 <% end %>
